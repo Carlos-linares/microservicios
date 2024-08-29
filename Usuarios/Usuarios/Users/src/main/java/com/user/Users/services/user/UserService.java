@@ -9,6 +9,6 @@ public interface UserService {
     UserDto updateUsuario(Long id, UserToSaveDto usuario) throws UserNotFoundException;
     UserDto findById(Long id) throws UserNotFoundException;
     void deleteUserById(Long id) throws UserNotFoundException;
-    UserDto findByUsernameAndRol(String username, Role role) throws UserNotFoundException;
-    UserDto findByusernameAndrole(String username, Role role) throws UserNotFoundException;
+    UserDto findByUsernameAndRol(String username) throws UserNotFoundException;
+    UserDto findByusernameAndrole(String username) throws UserNotFoundException;
 }
